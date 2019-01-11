@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello !{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+        <!-- Example row of columns -->
+        <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/stainless_hose/stainless-hose.jpg') }}" alt="stainless-hose">
+                <div class="card-body">
+                    <h5 class="card-title">Металорукави</h5>
+                    <p class="card-text"> Високого тиску</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('metallhose') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/gofra/vihlopnaya-gofra.jpg') }}" alt="vihlopnaya-gofra">
+                <div class="card-body">
+                    <h5 class="card-title">Вихлопна гофра</h5>
+                    <p class="card-text">Герметична для вентиляційних систем, компенсація вібрацй</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('strip_wound') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/expantion-joints/expantion-joints.jpg') }}" alt="expantion-joints">
+                <div class="card-body">
+                    <h5 class="card-title">Компенсатори</h5>
+                    <p class="card-text">Для систем водопостачання, опалення</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('expansion_joint') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/hose/hose.jpg') }}" alt="hose">
+                <div class="card-body">
+                    <h5 class="card-title">Шланги / Рукави</h5>
+                    <p class="card-text">Шланги резинові, ПВХ, поліуританові</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('hose') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/tap/tap.jpg') }}" alt="tap">
+                <div class="card-body">
+                    <h5 class="card-title">Крани</h5>
+                    <p class="card-text"> Шарові крани</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('tap') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/hidraulic-fittings/hidraulic-fittings.jpg') }}" alt="hidraulic-fittings">
+                <div class="card-body">
+                    <h5 class="card-title">Фітинги гідравлічні</h5>
+                    <p class="card-text">Для швидкого під'єднання гідравлічних шлангів до обладнання</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('fitting_hydraulic') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/quick_release/quick_release.jpg') }}" alt="quick_release">
+                <div class="card-body">
+                    <h5 class="card-title">Швидкороз'єми</h5>
+                    <p class="card-text">Для швидкого під'єднання шлангів до обладнання</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('quick_release') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('img/fitting_pipe/fitting_pipe.jpg') }}" alt="fitting_pipe">
+                <div class="card-body">
+                    <h5 class="card-title">Фітинги для труб, Фланці</h5>
+                    <p class="card-text">Латунні, із нерж. сталі</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ path('fitting_pipe') }}" class="btn btn-primary">Перейти &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+{% endblock %}
+

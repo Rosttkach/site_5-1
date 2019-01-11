@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/design/favicon.ico') }}" />
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<div class="example-wrapper">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="{{ path('home') }}">
+            <img alt="Brand" src="{{ asset('img/design/logo.gif') }}">
+            Пайп-Трейд-Сервіс </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('home') }}"><i class="material-icons">home</i>Головна <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('contact') }}"><i class="material-icons">contact_phone</i> Контакти</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('price') }}"><i class="material-icons">work</i> Прайси</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Товари</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="{{ path('metallhose') }}"><img height="60px" src="{{ asset ('img/stainless_hose/stainless-hose.jpg')}}" alt="stainless-hose"/> Металорукави</a>
+                        <a class="dropdown-item" href="{{ path('strip_wound') }}"><img height="60px" src="{{ asset ('img/gofra/vihlopnaya-gofra.jpg')}}" alt="vihlopnaya-gofra"/> Вихлопна гофра</a>
+                        <a class="dropdown-item" href="{{ path('expansion_joint') }}"><img height="60px" src="{{ asset ('img/expantion-joints/expantion-joints.jpg')}}" alt="expantion-joints"/> Компенсатори</a>
+                        <a class="dropdown-item" href="{{ path('hose') }}"><img height="60px" src="{{ asset ('img/hose/hose.jpg')}}" alt="hose"/> Шланги / Рукави</a>
+                        <a class="dropdown-item" href="{{ path('tap') }}"><img height="60px" src="{{ asset ('img/tap/tap.jpg')}}" alt="tap"/> Крани</a>
+                        <a class="dropdown-item" href="{{ path('fitting_hydraulic') }}"><img height="60px" src="{{ asset ('img/hidraulic-fittings/hidraulic-fittings.jpg')}}" alt="hidraulic-fittings"/> Фітинги гідравлічні</a>
+                        <a class="dropdown-item" href="{{ path('quick_release') }}"><img height="60px" src="{{ asset ('img/quick_release/quick_release.jpg')}}" alt="quick_release"/> Швидкороз'ємні з'єднання</a>
+                        <a class="dropdown-item" href="{{ path('fitting_pipe') }}"><img height="60px" src="{{ asset ('img/fitting_pipe/fitting_pipe.jpg')}}" alt="fittings-cluster"/> Фітинги для труб, Фланці</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <br>
+
+            <p><h2 class="text-primary alert  alert-info" >Товари для Вашого виробництва</h2></p>
+            <h5 class="alert  alert-info">
+                <p>(044) 360-74-21</p>
+                <p>(050) 154-87-57</p>
+                <p>(096) 482-43-52</p>
+                <p>e-mail: <a href="&#109;a&#105;l&#116;&#111;:&#114;&#111;&#115;&#116;&#116;&#107;&#97;&#99;&#104;&#64;&#104;&#111;&#116;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Відправити e-mail</a>
+            </h5>
+        </div>
+    </div>
+    <div class="container">
+
+    </div> <!-- /container -->
+
+</main>
+{% block body %}{% endblock %}
+<hr>
+<footer class="container">
+    <div class="footer">
+        <div class="footer_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4><p>Контакти</p></h4>
+                        т. (044) 360-68-17 <br>
+                        т. (044) 360-74-21 <br>
+                        м. (050) 154-87-57 - МТС <br>
+                        м. (050) 545-63-09 - МТС <br>
+                        м. (096) 482-43-52 - Київстар
+
+                        <p>e-mail: <a href="&#109;a&#105;l&#116;&#111;:&#114;&#111;&#115;&#116;&#116;&#107;&#97;&#99;&#104;&#64;&#104;&#111;&#116;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Відправити e-mail</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Категорії товарів</h4>
+                        <ul>
+                            <li><a href="{{ path('metallhose') }}" >Металорукави</a></li>
+                            <li><a href="{{ path('strip_wound') }}" >Вихлопна гофра</a></li>
+                            <li><a href="{{ path('expansion_joint') }}" >Компенсатори</a></li>
+                            <li><a href="{{ path('hose') }}" >Шланги / Рукави</a></li>
+                            <li><a href="{{ path('tap') }}" >Крани</a></li>
+                            <li><a href="{{ path('fitting_hydraulic') }}" >Фітинги гідравлічні</a></li>
+                            <li><a href="{{ path('quick_release') }}" >Швидкороз'ємні з'єднання</a></li>
+                            <li><a href="{{ path('fitting_pipe') }}" >Фітинги для труб, Фланці</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Перехід по сайту</h4>
+                        <ul>
+                            <li><a href="/" >Головна</a></li>
+                            <li><a href="#" >Категорії товарів</a></li>
+                            <li><a href="#" >Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Завжди Вам раді</h4>
+                        <img src="{{ asset('img/design/phone.png') }}" /><br><br>
+
+                        <div class="pluso" data-background="transparent" data-options="big,round,multiline,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print" data-url="http://www.lactoza.org.ua" data-title="Пищевые фармацевтически добавки и добавки для комбикрмрв" data-description="Пищевые добавки
+                Пищевые добавки применяются: для усовершенствования технологической подготовки и обработки пищевого сырья, изготовления, фасования и транспортировки готового товара;
+                Корректировки вкусовых и внешних качеств, аромата, консистенции и тому подобныех характеристик сырья и продуктов на его основе;
+                Продления сроков хранения продуктов питания при условии, что не маскируют последствия использования испорченного сырья;
+                Максимально сохраняют природные качества продукта;
+                Повышают стабильные качества продукции при заданных условиях хранения."></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>&copy; Company 2005-2018</p>
+</footer>
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+{% endblock %}</body>
 </html>
+
