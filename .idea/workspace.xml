@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="129925cf-eeb6-4cb4-a9e8-738ba75c1014" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MetallhoseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MetallhoseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StripWoundController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StripWoundController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fitting_hydraulic/fitting_hydraulic.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fitting_hydraulic/fitting_hydraulic.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fitting_pipe/fitting_pipe.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fitting_pipe/fitting_pipe.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quick_release/quick_release.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quick_release/quick_release.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="250">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="e#34#99#0#PHP" expanded="true" />
               </folding>
@@ -342,7 +336,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547221355726" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547221865717" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -385,15 +379,16 @@
       <workItem from="1547207868088" duration="662000" />
       <workItem from="1547209683791" duration="834000" />
       <workItem from="1547210618457" duration="436000" />
-      <workItem from="1547215449055" duration="5456000" />
+      <workItem from="1547215449055" duration="5976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11800000" />
+    <option name="totallyTimeSpent" value="12320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26863754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -413,7 +408,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -645,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="250">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#34#99#0#PHP" expanded="true" />
           </folding>
